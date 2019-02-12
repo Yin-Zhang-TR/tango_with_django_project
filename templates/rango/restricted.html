@@ -1,0 +1,13 @@
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    Restricted
+{% endblock %}
+
+{% block body_block %}
+	<h1>Restricted to Rango</h1>
+	<form id="login_form" method="post" action="{% url 'restricted' %}">
+		Rango says: <strong>Since you're logged in, you can see this text!</strong>
+	</form>
+{% endblock %}
